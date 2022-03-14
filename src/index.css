@@ -1,0 +1,109 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://picjumbo.com/wp-content/uploads/clouds-from-an-airplane-window.jpg);
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100%; 
+  max-width: 500px;
+  margin: auto;
+}
+
+ul { 
+  width: 100%;
+  list-style: none;
+  padding: 0 0.25rem 0.25rem; 
+}
+
+ul li::before { 
+  content: "\200B";
+}
+.city { 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+  background-color: white;
+
+}
+
+.city:first-child { 
+  margin: 0;
+}
+
+.city input[type="checkbox"] { 
+  text-align: center;
+  width: 2.5rem;
+  width: 48px;
+  min-width: 48px;
+  height: 2.5rem;
+  height: 48px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.city input[type="checkbox"]:focus + label { 
+  text-decoration: underline;
+}
+
+.city > label { 
+  font-size: 0.75 rem;
+  flex-grow: 1;
+}
+
+.city svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color:rgb(4, 126, 156);
+  cursor: pointer;
+}
+
+.city svg:focus,
+.city svg:hover { 
+  color: yellow;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+}
+
+
+button { 
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  color:rgb(4, 126, 156);
+}

@@ -1,0 +1,58 @@
+/* .App {
+  text-align: center;
+}*/
+
+.cities { 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 10px; 
+} 
+
+.header {
+  display: flex;
+  justify-content: center;
+
+}
+
+.pageTitle { 
+  align-self:flex-start ;
+ color: rgb(4, 126, 156);
+}
+
+.headerlink-title {
+  color: rgb(4, 126, 156);
+  text-decoration: none;
+  padding: 0 5px;
+  
+}
+
+.headerlink-dot {
+  margin-top: -0.5rem;
+  opacity: 0;
+  transition: opacity 200ms linear;
+}
+
+.headerlink-title:hover .headerlink-dot {
+  opacity: 1;
+}
+
+
+.headerlink-dot-active {
+  margin-top: -0.5rem;
+  display: block;
+}
+
+li { 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.listOfCities ul {
+    columns: 6;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
